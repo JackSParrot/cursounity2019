@@ -1,5 +1,3 @@
-﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class AudioService : MonoBehaviour
@@ -13,8 +11,7 @@ public class AudioService : MonoBehaviour
     {
         if(Instance != null)
         {
-            Destroy(gameObject);
-            enabled = false;
+            Destroy(Instance.gameObject);
         }
         Instance = this;
         DontDestroyOnLoad(gameObject);
