@@ -7,7 +7,7 @@ using UnityEngine;
 public class AudioDefinition
 {
     public AudioClip Clip = null;
-    [Range(0f, 2f)]
+    [Range(0f, 1f)]
     public float Volume = 1f;
     public bool Loop = false;
 }
